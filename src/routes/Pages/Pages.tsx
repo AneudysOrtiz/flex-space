@@ -3,11 +3,11 @@ import { Routes } from 'react-router';
 import Box from '@mui/material/Box';
 
 import routes from '..';
-import { getPageHeight, renderRoutes } from './utils';
+import { renderRoutes } from './utils';
 
 function Pages() {
   return (
-    <Box sx={{ height: (theme) => getPageHeight(theme) }}>
+    <Box>
       <Routes>{renderRoutes(routes)}</Routes>
     </Box>
   );
